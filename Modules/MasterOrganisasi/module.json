@@ -1,0 +1,13 @@
+{
+    "name": "MasterOrganisasi",
+    "alias": "masterorganisasi",
+    "description": "",
+    "keywords": [],
+    "priority": 0,
+    "providers": [
+        "Modules\\MasterOrganisasi\\Providers\\MasterOrganisasiServiceProvider"
+    ],
+    "aliases": {},
+    "files": [],
+    "requires": []
+}

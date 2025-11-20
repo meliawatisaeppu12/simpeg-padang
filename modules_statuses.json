@@ -1,0 +1,11 @@
+{
+    "Api": true,
+    "DataPegawai": false,
+    "RiwayatJabatan": false,
+    "StrukturOrganisasi": true,
+    "Riwayat": true,
+    "MasterJabatan": true,
+    "MasterOrganisasi": true,
+    "KelompokAbsen": true,
+    "HukumanDisiplin": false
+}

@@ -1,0 +1,13 @@
+{
+    "name": "KelompokAbsen",
+    "alias": "kelompokabsen",
+    "description": "",
+    "keywords": [],
+    "priority": 0,
+    "providers": [
+        "Modules\\KelompokAbsen\\Providers\\KelompokAbsenServiceProvider"
+    ],
+    "aliases": {},
+    "files": [],
+    "requires": []
+}

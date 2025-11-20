@@ -1,0 +1,13 @@
+{
+    "name": "DataPegawai",
+    "alias": "datapegawai",
+    "description": "",
+    "keywords": [],
+    "priority": 0,
+    "providers": [
+        "Modules\\DataPegawai\\Providers\\DataPegawaiServiceProvider"
+    ],
+    "aliases": {},
+    "files": [],
+    "requires": []
+}

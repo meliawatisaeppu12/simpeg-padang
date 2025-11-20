@@ -1,0 +1,13 @@
+{
+    "name": "StrukturOrganisasi",
+    "alias": "strukturorganisasi",
+    "description": "",
+    "keywords": [],
+    "priority": 0,
+    "providers": [
+        "Modules\\StrukturOrganisasi\\Providers\\StrukturOrganisasiServiceProvider"
+    ],
+    "aliases": {},
+    "files": [],
+    "requires": []
+}
