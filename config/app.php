@@ -15,7 +15,7 @@ return [
     |
     */
 
-    'name' => env('APP_NAME', 'Laravel'),
+    'name' => env('APP_NAME', 'SIMPEG'),
 
     /*
     |--------------------------------------------------------------------------
@@ -28,7 +28,7 @@ return [
     |
     */
 
-    'env' => env('APP_ENV', 'production'),
+    'env' => env('APP_ENV', 'development'),
 
     /*
     |--------------------------------------------------------------------------
@@ -122,9 +122,7 @@ return [
     */
 
     'key' => env('APP_KEY'),
-
     'super_app_key' => env('SUPER_APP_KEY'),
-
     'cipher' => 'AES-256-CBC',
 
     /*
