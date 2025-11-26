@@ -9,7 +9,7 @@ class KepalaPuskesmas extends Model
 {
     use HasFactory;
 
-    protected $connection = 'esdm';
+    protected $connection = 'mysql';
 
     protected $table = 'tb_kepala_puskesmas';
 }

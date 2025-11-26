@@ -35,14 +35,15 @@ use Illuminate\Support\Facades\Response;
 use Illuminate\Support\Facades\File;
 use Illuminate\Support\Facades\Log;
 
-//Route::get('/', function () {
+Route::get('/', function () {
 
-// if (Auth::check()) {
-//  return redirect()->route('dashboard');
-//}
+    if (Auth::check()) {
+        return redirect()->route('dashboard');
+    }
 
-// return view('landing');
-//})->name('landing');
+    return view('landing');
+})->name('landing');
+//Route::view('/', 'welcome')->name('welcome');
 
 Route::get('/riwayat-jabatan', RiwayatJabatan::class)->middleware(['auth', 'authorized'])->name('riwayat-jabatan');
 Route::get('/riwayat-diklat', RiwayatDiklat::class)->middleware(['auth', 'authorized'])->name('riwayat-diklat');

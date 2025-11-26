@@ -9,7 +9,7 @@ class RiwayatDiklat extends Model
 {
     use HasFactory;
 
-    protected $connection = 'simpegv2';
+    protected $connection = 'mysql';
 
     protected $table = 'rw_diklat';
 }

@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="icon" type="image/x-icon" href="{{ url('/img/pdg.ico') }}">
-    <title>SIMPEG Kota Padang</title>
+    <link rel="icon" type="image/x-icon" href="{{ url('/img/logo_mentawai.png') }}">
+    <title>SIMPEG Kepulauan Mentawai</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/1.2.0/tailwind.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
         integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
@@ -32,12 +32,12 @@
             class="fixed z-50 w-full bg-white top-0 flex flex-wrap items-center justify-between px-2 py-2 navbar-expand-lg shadow-md">
             <div class="container pl-4 mx-auto flex flex-wrap items-center justify-between">
                 <div class="flex-none">
-                    <img class="w-8 mr-5" src="{{ url('/img/pdg.png') }}" alt="" srcset="">
+                    <img class="w-8 mr-5" src="{{ url('/img/logo_mentawai.png') }}" alt="" srcset="">
                 </div>
                 <div class="w-full relative flex justify-between lg:w-auto lg:static lg:block lg:justify-start">
                     <a class="text-sm leading-relaxed inline-block mr-4 py-2 whitespace-no-wrap text-lg text-gray-800"
                         href="/">
-                        SIMPEG Kota Padang
+                        SIMPEG Kabupaten Kepulauan Mentawai
                         <!-- <img src="https://www.askfavr.com/_nuxt/img/c88a184.png" alt="..." width="110"
                class="max-w-full h-auto align-middle border-none"/> -->
                     </a>
@@ -62,7 +62,7 @@
                                 </li>
                             @else
                                 <li class="nav-item">
-                                    <a href="{{ url('/dashboard') }}"
+                                    <a href="{{ url('/login') }}"
                                         class="rounded-md bg-white border border-gray-500 text-white px-6 py-3 shadow hover:shadow-md outline-none focus:outline-none lg:mr-1 lg:mb-0 ml-3 mb-3"
                                         type="button" style="transition: all 0.15s ease 0s; background: #71a8bc;" onmouseover="this.style.backround='#437f95'">Masuk ke Akun SIMPEG
                                         {{-- <i class="fas fa-arrow-right"></i> --}}
@@ -82,7 +82,7 @@
                 <div class="container bg-white rounded-lg mx-auto px-8 my-16 ">
                     <div class="items-center flex flex-col md:flex-row-reverse">
                         <div class="w-full md:w-5/12 px-4 mr-auto ml-auto my-16 md:my-0">
-                            <img alt="..." class="max-w-full rounded-lg" src="{{ url('/img/asn.png') }}" />
+                            <img alt="..." class="max-w-full rounded-lg" src="{{ url('/img/asn_mentawai.png') }}" />
                         </div>
                         <div class="w-10/12 md:w-6/12 px-4 mr-auto ml-auto">
                             <div class="">
@@ -92,8 +92,8 @@
                                 </h2>
                                 <p style="font-family: Roboto; font-weight: 300"
                                     class="mt-4 text-lg leading-relaxed text-gray-900">
-                                    SIMPEG Kota Padang Merupakan sistem pengelolaan data pegawaian di lingkungan
-                                    pemerintah Kota Padang.
+                                    SIMPEG Mentawai Merupakan sistem pengelolaan data pegawaian di lingkungan
+                                    pemerintah Kabupaten Kepulauan Mentawai.
                                 </p>
                                 <div class="mt-12">
                                     <div class="flex flex-wrap">

@@ -9,7 +9,7 @@ class UsulanRiwayatHukdis extends Model
 {
     use HasFactory;
 
-    protected $connection = 'simpegv2';
+    protected $connection = 'mysql';
 
     protected $table = 'usulan_rw_hukdis';
 

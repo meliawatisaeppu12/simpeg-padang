@@ -29,13 +29,13 @@ class AuthorizedAccessOnly
             if (empty($jabatan_id)) {
                 return redirect()->route('unauthorized');
             } else {
-                $access = PositionAccess::whereIn('access_id', [6,7,8,9])->where('jabatan_id', $jabatan_id)->get();
+                $access = PositionAccess::whereIn('access_id', [6, 7, 8, 9])->where('jabatan_id', $jabatan_id)->get();
                 if ($access->count() > 0) {
                     return $next($request);
                 } else {
-                    $personal_access = PersonalAccess::whereIn('access_id',[6,7,8,9])->where('pns_id', Auth::user()->v2Profile->id)->get();
+                    $personal_access = PersonalAccess::whereIn('access_id', [6, 7, 8, 9])->where('pns_id', Auth::user()->v2Profile->id)->get();
 
-                    if($personal_access->count() > 0) {
+                    if ($personal_access->count() > 0) {
                         return $next($request);
                     }
 

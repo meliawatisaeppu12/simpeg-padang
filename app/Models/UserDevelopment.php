@@ -15,7 +15,7 @@ class UserDevelopment extends Authenticatable
     use HasProfilePhoto;
     use Notifiable;
 
-    protected $connection = 'simpegv2dev';
+    protected $connection = 'mysql';
 
     protected $table = 'users';
 }

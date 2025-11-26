@@ -9,7 +9,7 @@ class DataUtama extends Model
 {
     use HasFactory;
 
-    protected $connection = 'esdm';
+    protected $connection = 'mysql';
 
     protected $table = 'data_utama';
     

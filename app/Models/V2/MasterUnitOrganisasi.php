@@ -11,7 +11,7 @@ class MasterUnitOrganisasi extends Model
 
     public static $withoutAppends = false;
 
-    protected $connection = 'simpegv2';
+    protected $connection = 'mysql';
 
     protected $table = 'm_unit_organisasi';
 

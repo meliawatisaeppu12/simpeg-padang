@@ -6,10 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>{{ config('app.name', 'Laravel') }}</title>
-
-    <!-- Site favicon -->
-	<link rel="icon" type="image/png" href="{{url('vendor/images/favicon.ico')}}">
+    <link rel="icon" type="image/x-icon" href="{{ url('/img/logo_mentawai.png') }}">
+    <title>SIMPEG Kepulauan Mentawai</title>
 
     <!-- Scripts -->
     <style>
@@ -158,11 +156,11 @@
     <div class="form">
         <form action="{{ route('login') }}" method="post">
             @csrf
-            @samlidp
-            <img src="{{ route('image', '256-logo-padang.png') }}">
+           
+            <img class="w-8 mr-5" src="{{ url('/img/logo_mentawai.png') }}" alt="" srcset="">
 
             <div class="text-gray-800">
-                <strong>Masuk</strong><br>untuk menggunakan SIMPEG Kota Padang
+                <strong>Masuk</strong><br>untuk menggunakan SIMPEG Kepulauan Mentawai
             </div>
 
             <input type="text" name="username" oninvalid="this.setCustomValidity('NIP Tidak Boleh Kosong')" placeholder="Nomor Induk Pegawai" value="{{ old('username') }}"
@@ -172,9 +170,9 @@
 
             <div>
                 @if ($errors->has('username'))
-                    <small class="text-red-600">
-                        {{ $errors->first('username') }}
-                    </small>
+                <small class="text-red-600">
+                    {{ $errors->first('username') }}
+                </small>
                 @endif
             </div>
 

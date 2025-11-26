@@ -88,7 +88,7 @@ class User extends Authenticatable
     {
         return $this->hasOne(DataUtama::class, 'nip_baru', 'username');
     }
-    
+
     public function dataNonAsn()
     {
         return $this->hasOne(DataNonAsn::class, 'username', 'username');

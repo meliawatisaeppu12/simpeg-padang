@@ -9,7 +9,7 @@ class RefSubJabatan extends Model
 {
     use HasFactory;
 
-    protected $connection = 'simpegv2';
+    protected $connection = 'mysql';
 
     protected $table = 'ref_sub_jabatan';
 }

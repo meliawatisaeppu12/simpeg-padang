@@ -10,7 +10,7 @@ class UsulanRiwayatJabatan extends Model
 {
     use HasFactory, SoftDeletes;
 
-    protected $connection = 'simpegv2';
+    protected $connection = 'mysql';
 
     protected $table = 'usulan_rw_jabatan';
 

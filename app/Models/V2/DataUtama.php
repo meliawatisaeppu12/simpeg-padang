@@ -11,7 +11,7 @@ class DataUtama extends Model implements PelaksanaInterface
 {
     use HasFactory;
 
-    protected $connection = 'simpegv2';
+    protected $connection = 'mysql';
 
     protected $table = 'data_utama';
 

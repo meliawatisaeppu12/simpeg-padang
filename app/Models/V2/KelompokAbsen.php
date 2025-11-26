@@ -9,7 +9,7 @@ class KelompokAbsen extends Model
 {
     use HasFactory;
 
-    protected $connection = 'esdm';
+    protected $connection = 'mysql';
 
     protected $table = 'kelompok_absen';
 
