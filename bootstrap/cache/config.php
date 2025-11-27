@@ -1,10 +1,10 @@
 <?php return array (
   'app' => 
   array (
-    'name' => 'Laravel',
-    'env' => 'local',
-    'debug' => true,
-    'url' => 'http://localhost',
+    'name' => 'SIMPEG',
+    'env' => 'production',
+    'debug' => false,
+    'url' => 'https://simpeg.mentawaikab.go.id',
     'asset_url' => NULL,
     'timezone' => 'Asia/Jakarta',
     'locale' => 'id',
@@ -255,7 +255,7 @@
         'driver' => 'octane',
       ),
     ),
-    'prefix' => 'laravel_cache_',
+    'prefix' => 'simpeg_cache_',
   ),
   'cors' => 
   array (
@@ -324,7 +324,7 @@
         'url' => NULL,
         'host' => '127.0.0.1',
         'port' => '3306',
-        'database' => 'simpeg',
+        'database' => 'db_access',
         'username' => 'root',
         'password' => '',
         'unix_socket' => '',
@@ -358,7 +358,7 @@
         array (
         ),
       ),
-      'simpegv2' => 
+      'laravelv2' => 
       array (
         'driver' => 'mysql',
         'url' => NULL,
@@ -398,7 +398,7 @@
         array (
         ),
       ),
-      'simpegv2dev' => 
+      'laravelv2dev' => 
       array (
         'driver' => 'mysql',
         'url' => NULL,
@@ -454,7 +454,7 @@
       'options' => 
       array (
         'cluster' => 'redis',
-        'prefix' => 'laravel_database_',
+        'prefix' => 'simpeg_database_',
       ),
       'default' => 
       array (
@@ -659,7 +659,7 @@
       array (
         'driver' => 'local',
         'root' => 'G:\\SEMUA PROJECT\\simpeg-padang-dev-remote\\storage\\app/public',
-        'url' => 'http://localhost/storage',
+        'url' => 'https://simpeg.mentawaikab.go.id/storage',
         'visibility' => 'public',
         'throw' => false,
       ),
@@ -695,7 +695,7 @@
       array (
         'credentials' => 
         array (
-          'file' => NULL,
+          'file' => 'storage/app/firebase-json.json',
           'auto_discovery' => true,
         ),
         'auth' => 
@@ -704,7 +704,7 @@
         ),
         'database' => 
         array (
-          'url' => NULL,
+          'url' => '',
         ),
         'dynamic_links' => 
         array (
@@ -870,7 +870,7 @@
   ),
   'logging' => 
   array (
-    'default' => 'stack',
+    'default' => 'daily',
     'deprecations' => 
     array (
       'channel' => NULL,
@@ -1007,7 +1007,7 @@
     'from' => 
     array (
       'address' => 'hello@example.com',
-      'name' => 'Laravel',
+      'name' => 'SIMPEG',
     ),
     'markdown' => 
     array (
@@ -1321,13 +1321,77 @@
   ),
   'passport' => 
   array (
-    'private_key' => NULL,
-    'public_key' => NULL,
+    'private_key' => '-----BEGIN PRIVATE KEY-----
+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
+Xg47j7weYz7gTFRZLbiXse84P4vfGbo=
+-----END PRIVATE KEY-----',
+    'public_key' => '-----BEGIN PUBLIC KEY-----
+MIICIjANBgkqhkiG9w0BAQEFAAOCAg8AMIICCgKCAgEAxyPjGlU3qa1K6rghfHBv
+Abr1WxYbLBBRdgyapq2gEIXsmFz87lMpRSR+M/KDVM8ewk/1vSetwtCnxmJsH7hu
+3vsMwFolhoFASoCQ4xZfevQ/FXZyo1S7czWJLeNPUxRhuvaYLjSlgFcVQraS+a88
+blC9gBbHkOYk3+OhZQX76KTyKGAg/20TCYNFdw9/pEi4izHC48DIXNtIocEeHe6P
+TGxLLbxCS6hN1HbCGabl/Ewv8YKFsaPiErqLvZ2hQCpV2G0kwxHjF+2C6kkSlMXE
+m/5grAOZg6QuVzb6n7jIi/phqITxLGEjIsAB5ZmmTMvcCDbX5rTOOxp4Eh09dxWn
+hxeMp6lczyh31K0anRP9QeSGplfSGibdvsYqbph+SusID6BGUKk8ar35FxnSr0nF
+qdQZktPdNPNjYcPw+wG8S5IOfKwCXgxUsev0+lcxjrt0VnKAhGraLzGz7YIUX78e
+s6Q7OCyOf1yqj7wD128+jI3oqvk0Giqu9YWpWLcFoNXREUwh4jLn/5mhwj4jWITj
+0FIqWs2t/FdKWmbg7tJUOeMYGf/syYYy6pyktC+bsn1OhZIshA+e0+XZxqwTAm+l
+iJfMR1mimR3D0/qpNe+VocdmnmgOgfy3loyxp/au09rih4XzKdOyyCUEuXQImGVX
+G8CHjDbtJInmZc5Qrxxt9b0CAwEAAQ==
+-----END PUBLIC KEY-----',
     'client_uuids' => false,
     'personal_access_client' => 
     array (
-      'id' => NULL,
-      'secret' => NULL,
+      'id' => '6',
+      'secret' => 'aJTwNjKxDWxdjAUMigTz2FYmB6wObea58aJhmaVM',
     ),
     'storage' => 
     array (
@@ -1340,7 +1404,7 @@
   ),
   'queue' => 
   array (
-    'default' => 'sync',
+    'default' => 'database',
     'connections' => 
     array (
       'sync' => 
@@ -1406,7 +1470,7 @@
     'logoutRoute' => NULL,
     'errorRoute' => NULL,
     'strict' => true,
-    'debug' => true,
+    'debug' => false,
     'proxyVars' => false,
     'sp' => 
     array (
@@ -1563,7 +1627,7 @@ rVinvIR+qdbLxhGGD9Fee2g=',
       2 => '127.0.0.1',
       3 => '127.0.0.1:8000',
       4 => '::1',
-      5 => 'localhost',
+      5 => 'simpeg.mentawaikab.go.id',
     ),
     'guard' => 
     array (
@@ -1611,7 +1675,7 @@ rVinvIR+qdbLxhGGD9Fee2g=',
       0 => 2,
       1 => 100,
     ),
-    'cookie' => 'laravel_session',
+    'cookie' => 'simpeg_session',
     'path' => '/',
     'domain' => NULL,
     'secure' => NULL,
@@ -1624,7 +1688,7 @@ rVinvIR+qdbLxhGGD9Fee2g=',
     array (
       'mybot' => 
       array (
-        'token' => 'YOUR-BOT-TOKEN',
+        'token' => '',
       ),
     ),
     'default' => 'mybot',
