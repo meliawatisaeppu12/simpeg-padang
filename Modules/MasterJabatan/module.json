@@ -1,0 +1,13 @@
+{
+    "name": "MasterJabatan",
+    "alias": "masterjabatan",
+    "description": "",
+    "keywords": [],
+    "priority": 0,
+    "providers": [
+        "Modules\\MasterJabatan\\Providers\\MasterJabatanServiceProvider"
+    ],
+    "aliases": {},
+    "files": [],
+    "requires": []
+}

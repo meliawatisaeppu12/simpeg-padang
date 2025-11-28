@@ -1,0 +1,13 @@
+{
+    "name": "RiwayatJabatan",
+    "alias": "riwayatjabatan",
+    "description": "",
+    "keywords": [],
+    "priority": 0,
+    "providers": [
+        "Modules\\RiwayatJabatan\\Providers\\RiwayatJabatanServiceProvider"
+    ],
+    "aliases": {},
+    "files": [],
+    "requires": []
+}

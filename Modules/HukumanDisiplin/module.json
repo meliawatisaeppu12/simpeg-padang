@@ -1,0 +1,13 @@
+{
+    "name": "HukumanDisiplin",
+    "alias": "hukumandisiplin",
+    "description": "",
+    "keywords": [],
+    "priority": 0,
+    "providers": [
+        "Modules\\HukumanDisiplin\\Providers\\HukumanDisiplinServiceProvider"
+    ],
+    "aliases": {},
+    "files": [],
+    "requires": []
+}
