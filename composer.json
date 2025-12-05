@@ -5,7 +5,7 @@
     "keywords": ["framework", "laravel"],
     "license": "MIT",
     "require": {
-        "php": "^8.1",
+        "php": "^8.2",
         "24slides/laravel-saml2": "^2.4",
         "firebase/php-jwt": "^6.10",
         "fruitcake/laravel-cors": "^2.0",
